@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" data-accent="blue">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Olajobi Muhtady — Data Scientist & AI Engineer</title>
+<script>document.documentElement.classList.add('js');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+<!-- category icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="ic-ai" viewBox="0 0 24 24">
+    <g fill="none" stroke="currentColor" stroke-width="1.1" opacity="0.55">
+      <line x1="5" y1="6" x2="12" y2="9"></line><line x1="5" y1="6" x2="12" y2="15"></line>
+      <line x1="5" y1="12" x2="12" y2="9"></line><line x1="5" y1="12" x2="12" y2="15"></line>
+      <line x1="5" y1="18" x2="12" y2="9"></line><line x1="5" y1="18" x2="12" y2="15"></line>
+      <line x1="12" y1="9" x2="19" y2="12"></line><line x1="12" y1="15" x2="19" y2="12"></line>
+    </g>
+    <g fill="currentColor">
+      <circle cx="5" cy="6" r="1.6"></circle><circle cx="5" cy="12" r="1.6"></circle><circle cx="5" cy="18" r="1.6"></circle>
+      <circle cx="12" cy="9" r="1.6"></circle><circle cx="12" cy="15" r="1.6"></circle><circle cx="19" cy="12" r="1.7"></circle>
+    </g>
+  </symbol>
+  <symbol id="ic-ml" viewBox="0 0 24 24">
+    <path d="M5 4 V19 H20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M6.5 16.5 L18 7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" opacity="0.85"></path>
+    <g fill="currentColor">
+      <circle cx="8" cy="15.5" r="1.15"></circle><circle cx="11" cy="12" r="1.15"></circle>
+      <circle cx="14" cy="10.5" r="1.15"></circle><circle cx="17" cy="7.8" r="1.15"></circle>
+    </g>
+  </symbol>
+  <symbol id="ic-bi" viewBox="0 0 24 24">
+    <path d="M5 4 V19 H20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+    <g fill="currentColor">
+      <rect x="7.2" y="12.5" width="2.6" height="6.5" rx="0.7"></rect>
+      <rect x="11.2" y="8.3" width="2.6" height="10.7" rx="0.7"></rect>
+      <rect x="15.2" y="10.5" width="2.6" height="8.5" rx="0.7"></rect>
+    </g>
+  </symbol>
+  <symbol id="ic-web" viewBox="0 0 24 24">
+    <g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3.5" y="4.5" width="17" height="15" rx="2.2"></rect>
+      <line x1="3.5" y1="9" x2="20.5" y2="9"></line>
+    </g>
+    <g fill="currentColor">
+      <circle cx="6.3" cy="6.75" r="0.7"></circle><circle cx="8.5" cy="6.75" r="0.7"></circle><circle cx="10.7" cy="6.75" r="0.7"></circle>
+    </g>
+    <g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round">
+      <line x1="6.5" y1="12.5" x2="11.5" y2="12.5"></line>
+      <line x1="6.5" y1="15.5" x2="14" y2="15.5"></line>
+    </g>
+  </symbol>
+  <symbol id="ic-auto" viewBox="0 0 24 24">
+    <g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="3"></circle>
+      <path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 11-2.83-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 112.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"></path>
+    </g>
+  </symbol>
+</svg>
+<div class="shell">
+
+  <!-- ============ SIDEBAR RAIL ============ -->
+  <aside class="rail" id="rail">
+    <div class="id">
+      <div class="avatar"><img src="Avatar2.png" alt="Olajobi Muhtady"></div>
+      <div class="who">
+        <b>Olajobi Muhtady</b>
+        <span>Data · ML · AI Eng</span>
+      </div>
+    </div>
+
+    <div class="status"><span class="dot"></span> Available for new projects</div>
+
+    <nav class="nav" id="nav">
+      <a href="#home" class="active"><span class="ix">00</span> Home</a>
+      <a href="#about"><span class="ix">01</span> About</a>
+      <a href="#experience"><span class="ix">02</span> Experience</a>
+      <a href="#skills"><span class="ix">03</span> Skills &amp; Tools</a>
+      <a href="#work"><span class="ix">04</span> Projects</a>
+      <a href="#contact"><span class="ix">05</span> Contact</a>
+    </nav>
+
+    <div class="foot">
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/muhtady-olajobi-795b131b6" target="_blank" rel="noopener" title="LinkedIn">in</a>
+        <a href="https://github.com/TeddyM1975" target="_blank" rel="noopener" title="GitHub">gh</a>
+        <a href="mailto:muhtadyajibola@gmail.com" title="Email">@</a>
+        <a href="https://x.com/muhtady_olajobi" target="_blank" rel="noopener" title="X / Twitter">X</a>
+      </div>
+      <div class="controls">
+        <button class="themebtn" id="themebtn" title="Toggle dark mode" aria-label="Toggle theme">
+          <svg id="themeIcon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.5"></circle><path d="M12 2v2M12 20v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M2 12h2M20 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"></path></svg>
+        </button>
+      </div>
+    </div>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Menu">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"></path></svg>
+    </button>
+  </aside>
+
+  <!-- ============ MAIN ============ -->
+  <main class="main">
+
+    <!-- HERO -->
+    <section id="home" class="section" style="border:none;">
+      <div class="wrap">
+        <div class="hero">
+          <div class="reveal">
+            <h1 id="heroTitle"><span class="sc" data-final="Data Scientist &amp;">Data Scientist &amp;</span><br><span class="accent sc" data-final="AI / Automation">AI / Automation</span> <span class="sc" data-final="Engineer.">Engineer.</span></h1>
+            <p class="sub">I help teams turn messy data into clear decisions — and replace repetitive work with intelligent, self-running systems powered by ML and LLMs.</p>
+            <div class="cta">
+              <a href="#work" class="btn primary">View projects
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+              </a>
+              <a href="#" class="btn" id="resumeBtn">Download CV
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 3v12M7 11l5 5 5-5M5 21h14"></path></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- hero dashboard card -->
+          <div class="panel reveal">
+            <div class="ph-head">
+              <span class="ttl">at_a_glance.json</span>
+              <span class="lights"><i></i><i></i><i></i></span>
+            </div>
+            <div class="panel-body">
+              <div class="big-stat">
+                <span class="num" data-count="6" data-suffix="">0</span>
+                <span class="plus">+</span>
+                <span class="cap">years building<br>data &amp; AI systems</span>
+              </div>
+              <svg class="spark" viewBox="0 0 280 54" preserveAspectRatio="none">
+                <path class="area" d="M0,46 L18,40 L48,42 L82,30 L116,33 L150,22 L184,24 L214,13 L248,16 L280,6 L280,54 L0,54 Z"></path>
+                <path class="line" d="M0,46 L18,40 L48,42 L82,30 L116,33 L150,22 L184,24 L214,13 L248,16 L280,6"></path>
+                <circle cx="280" cy="6" r="3.6"></circle>
+              </svg>
+              <div class="mini-row">
+                <div class="mini">
+                  <div class="k">Focus</div>
+                  <div class="v">AI Eng <small>↗</small></div>
+                </div>
+                <div class="mini">
+                  <div class="k">Projects</div>
+                  <div class="v" data-count="20" data-suffix="+">0</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STAT STRIP -->
+    <section class="section" style="border:none;padding-top:6px;">
+      <div class="wrap reveal">
+        <div class="stripband">
+          <div class="cell"><div class="v"><span data-count="6">0</span><span class="accent">+</span></div><div class="k">Years experience</div></div>
+          <div class="cell"><div class="v"><span data-count="20">0</span><span class="accent">+</span></div><div class="k">Projects shipped</div></div>
+          <div class="cell"><div class="v"><span data-count="12">0</span><span class="accent">+</span></div><div class="k">Pipelines automated</div></div>
+          <div class="cell"><div class="v"><span class="accent">AI</span></div><div class="k">Automation engineer</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="wrap reveal">
+        <p class="eyebrow">01 — About</p>
+        <h2 class="h2">From raw data to autonomous systems.</h2>
+        <div class="about-grid" style="margin-top:30px;">
+          <div>
+            <p>I'm a data and AI professional with <strong>6+ years of experience</strong> spanning the full stack of modern data work — analysis, machine learning, and the AI automation that puts insight into motion. I started in analytics, moved deep into data science and predictive modelling, and now spend most of my time designing AI and LLM-powered systems that run on their own.</p>
+            <p>Currently serving as <strong>AI Engineer at CircleHQ</strong>, I build agentic systems using n8n, Airtable, and automation pipelines that handle real business workflows end-to-end. At GlobalPay, I designed an Applicant Tracking System, automated financial reporting suites, and architected secure data pipelines connecting Power BI to AWS RDS PostgreSQL. I've shipped production-grade AI agents including a RAG-based Q&amp;A bot, a WhatsApp notification system, and an OpenAI-powered travel chatbot — systems built for reliability, not just demos.</p>
+            <p>On the data science side, I've built and deployed end-to-end ML pipelines, NLP systems, and predictive models using Python, Scikit-learn, and Hugging Face Transformers — including a loan approval model that hit <strong>91% accuracy</strong>. I'm equally comfortable writing advanced DAX, optimising SQL queries against large transaction datasets, or presenting findings to executive stakeholders.</p>
+            <p>My favourite problems sit where data meets automation: forecasting that triggers an action, a model that routes a ticket, an agent that drafts the report nobody wanted to write. I care about clarity, reliability, and shipping things people actually use.</p>
+            <p>I'm also the founder of <strong>Horizon Management Tech Solutions (H.M.T.)</strong>, delivering affordable AI and automation solutions to schools and SMEs across Nigeria.</p>
+          </div>
+          <div class="facts">
+            <div class="f"><span class="k">Role</span><span class="val">AI Engineer · Data Scientist</span></div>
+            <div class="f"><span class="k">Experience</span><span class="val">6+ years</span></div>
+            <div class="f"><span class="k">Based in</span><span class="val">Nigeria</span></div>
+            <div class="f"><span class="k">Focus</span><span class="val">ML · LLMs · Automation</span></div>
+            <div class="f"><span class="k">Founder</span><span class="val">Horizon Mgmt Tech (H.M.T.)</span></div>
+            <div class="f"><span class="k">Open to</span><span class="val">Full-time · Freelance</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="wrap reveal">
+        <p class="eyebrow">02 — Experience</p>
+        <h2 class="h2">Where I've worked.</h2>
+        <div class="timeline" style="margin-top:24px;">
+          <div class="exp">
+            <div class="when"><span class="now">2026 Jan — Now</span></div>
+            <div>
+              <h3 class="role">Settlement &amp; Data Analyst</h3>
+              <div class="co">GlobalPay · Full-time</div>
+              <ul>
+                <li>Analysed transaction and settlement data to surface actionable insights and support business decision-making.</li>
+                <li>Developed a settlement automation system that significantly reduced manual processing time for the settlement team.</li>
+                <li>Developed and deployed an automated Power BI reporting suite for transaction monitoring, transitioning local .pbix workflows to Power BI Service for organizational accessibility.</li>
+                <li>Architected a secure data pipeline connecting Power BI to AWS RDS (PostgreSQL), replacing legacy Python-based extraction with native connectors to improve refresh reliability and security.</li>
+                <li>Engineered dynamic SQL queries to extract Year-to-Date (YTD) performance metrics, specifically filtering for core revenue drivers like Purchases and Cash Outs.</li>
+                <li>Resolved complex connectivity issues involving SSL certificate validation and ODBC DSN configurations to ensure seamless data synchronization between cloud and on-premise environments.</li>
+                <li>Led end-to-end discovery and planning for an internal HR tool — running structured stakeholder interviews across HR, Finance and IT to define requirements, user roles and core modules (employee management, leave, attendance, payroll and expense claims).</li>
+              </ul>
+              <div class="tags chips"><span class="chip">Power BI</span><span class="chip">PostgreSQL</span><span class="chip">Python</span><span class="chip">Automation</span><span class="chip">AWS RDS</span><span class="chip">ODBC</span><span class="chip">On-premises Data Gateways</span><span class="chip">Semantic Model Optimization</span><span class="chip">Zoho WorkDrive</span></div>
+            </div>
+          </div>
+          <div class="exp">
+            <div class="when"><span class="now">2025 Oct — Now</span></div>
+            <div>
+              <h3 class="role">AI Engineer <span style="font-weight:500;opacity:.6;">(Contract)</span></h3>
+              <div class="co">CircleHQ · Contract</div>
+              <ul>
+                <li>Designed and developed AI-powered systems to drive operational efficiency across the business.</li>
+                <li>Built an intelligent chatbot to handle automated customer and internal interactions.</li>
+                <li>Architected an AI-integrated ERP system to streamline core business processes.</li>
+                <li>Developed a content automation system to scale and accelerate content production workflows.</li>
+              </ul>
+              <div class="tags chips"><span class="chip">LLMs</span><span class="chip">Chatbots</span><span class="chip">ERP</span><span class="chip">Automation</span><span class="chip">n8n</span><span class="chip">Trigger</span><span class="chip">Google ADK</span><span class="chip">Multi-Agent Architecture</span></div>
+            </div>
+          </div>
+          <div class="exp">
+            <div class="when">2023 Apr — Sep</div>
+            <div>
+              <h3 class="role">Plant Inspection Associate Engineer <span style="font-weight:500;opacity:.6;">(Intern)</span></h3>
+              <div class="co">Nigeria LNG (NLNG) · Internship</div>
+              <ul>
+                <li>Conducted thorough inspections of plant equipment and systems to verify safe and efficient operation in compliance with company regulations.</li>
+                <li>Assessed the structural and functional integrity of facility assets as part of routine and scheduled inspection programmes.</li>
+                <li>Supported the plant inspection department in identifying maintenance needs and flagging non-conformances for corrective action.</li>
+              </ul>
+              <div class="tags chips"><span class="chip">Plant Inspection</span><span class="chip">Asset Integrity</span><span class="chip">Compliance</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="wrap reveal">
+        <p class="eyebrow">03 — Skills &amp; Tools</p>
+        <h2 class="h2">The toolbox.</h2>
+        <p class="lead" style="margin-bottom:30px;">A working toolkit spanning machine learning, LLMs, data engineering and BI — the technologies I reach for to ship data products end to end.</p>
+        <div class="skills-grid">
+          <div class="skillcard">
+            <h4><span class="glyph">◆</span> Machine Learning</h4>
+            <div class="chips"><span class="chip">Regression</span><span class="chip">Classification</span><span class="chip">Clustering</span><span class="chip">Model Evaluation</span><span class="chip">Feature Engineering</span><span class="chip">Hyperparameter Tuning</span><span class="chip">Scikit-learn</span></div>
+          </div>
+          <div class="skillcard">
+            <h4><span class="glyph">⌁</span> NLP &amp; LLMs</h4>
+            <div class="chips"><span class="chip">Hugging Face Transformers</span><span class="chip">RAG (FAISS)</span><span class="chip">Semantic Search</span><span class="chip">DistilBERT</span><span class="chip">OpenAI GPT</span><span class="chip">Prompt Engineering</span></div>
+          </div>
+          <div class="skillcard">
+            <h4><span class="glyph">▥</span> Programming</h4>
+            <div class="chips"><span class="chip">Python</span><span class="chip">Pandas</span><span class="chip">NumPy</span><span class="chip">Scikit-learn</span><span class="chip">Matplotlib</span><span class="chip">Seaborn</span><span class="chip">BeautifulSoup</span><span class="chip">Psycopg2</span><span class="chip">SQL</span></div>
+          </div>
+          <div class="skillcard">
+            <h4><span class="glyph">▦</span> Data Engineering</h4>
+            <div class="chips"><span class="chip">ETL Pipelines</span><span class="chip">AWS RDS</span><span class="chip">PostgreSQL</span><span class="chip">Data Modelling</span><span class="chip">Star Schema</span></div>
+          </div>
+          <div class="skillcard">
+            <h4><span class="glyph">▣</span> BI &amp; Visualisation</h4>
+            <div class="chips"><span class="chip">Power BI</span><span class="chip">DAX</span><span class="chip">Power Query</span><span class="chip">Excel</span></div>
+          </div>
+          <div class="skillcard">
+            <h4><span class="glyph">▲</span> Deployment</h4>
+            <div class="chips"><span class="chip">Flask</span><span class="chip">Streamlit</span><span class="chip">Dash</span><span class="chip">Cloud Deployment (AWS)</span></div>
+          </div>
+          <div class="skillcard">
+            <h4><span class="glyph">⟲</span> Automation &amp; Orchestration</h4>
+            <div class="chips"><span class="chip">n8n</span><span class="chip">REST APIs</span><span class="chip">Webhooks</span><span class="chip">Power Automate</span><span class="chip">Event-Driven Architectures</span><span class="chip">Building Automation Systems (BAS)</span><span class="chip">Airtable</span><span class="chip">Trigger</span></div>
+          </div>
+          <div class="skillcard">
+            <h4><span class="glyph">◇</span> Version Control</h4>
+            <div class="chips"><span class="chip">Git</span><span class="chip">GitHub</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="work" class="section">
+      <div class="wrap reveal">
+        <p class="eyebrow">04 — Projects</p>
+        <h2 class="h2">Selected work.</h2>
+        <p class="lead" style="margin-bottom:22px;">A mix of analytics, ML and AI automation. Swipe through — or filter by what you're after.</p>
+        <div class="filterbar" id="filters">
+          <button class="filter active" data-f="all">All</button>
+          <button class="filter" data-f="ai">AI / LLM</button>
+          <button class="filter" data-f="ml">Machine Learning</button>
+          <button class="filter" data-f="analytics">Analytics</button>
+          <button class="filter" data-f="automation">Automation</button>
+        </div>
+
+        <div class="carousel">
+          <button class="cnav prev" id="cprev" aria-label="Previous project">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"></path></svg>
+          </button>
+
+          <div class="prail" id="prail">
+
+            <article class="pcard" data-tags="automation analytics" style="--d:0;--hr:-26deg;">
+              <div class="pop"><span class="picon"><svg viewBox="0 0 24 24"><use href="#ic-auto"></use></svg></span></div>
+              <span class="pbadge">AUTO</span>
+              <div class="pinfo">
+                <h3>Settlement Automation System</h3>
+                <p>GlobalPayNG · automates daily financial settlement reconciliation across 3 transaction types, replacing a manual Excel workflow</p>
+                <div class="pmetrics"><span><b>Hrs→Min</b> daily recon</span><span><b>3</b> switch sources</span></div>
+                <div class="ptags"><span>FastAPI</span><span>Pandas</span><span>ZohoAPI</span></div>
+                <button class="pview" type="button">View case study
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+                </button>
+              </div>
+              <template class="cs">
+                <p class="cs-tag">GlobalPayNG · Internal Tool · Full-stack</p>
+                <p class="cs-lede">Designed and built a full-stack internal web application to automate the daily financial settlement reconciliation process, replacing a manual Excel-based workflow.</p>
+                <h4>Key contributions</h4>
+                <ul>
+                  <li>Architected a <b>FastAPI</b> backend with <b>Pandas</b> data processing, <b>SQLite</b> persistence, and <b>Zoho WorkDrive API</b> integration for cloud-based historical report archiving.</li>
+                  <li>Built automated reconciliation engines for three transaction types — Automatic Settlement &amp; Transfer (TMS vs Interswitch), Pay With Transfer (TMS vs ASSET/FCMB bank statements), and Purchase (TMS vs ISW, NIBSS and ZONE switches simultaneously).</li>
+                  <li>Implemented intelligent matching: exact RRN joins, fuzzy amount + name matching, cross-day duplicate-charge detection, and Nigerian business-day awareness for carry-over classification.</li>
+                  <li>Developed a complete escalation tracking system with individual and grouped escalation models, status lifecycle management, and resolution workflows.</li>
+                  <li>Delivered a clean browser-based UI branded to company identity, with role-based authentication, session management, and a transaction-type selection workflow.</li>
+                  <li>Reduced daily reconciliation from several hours to minutes, with a full audit trail and Zoho cloud export.</li>
+                </ul>
+                <h4>Stack</h4>
+                <div class="cs-stack"><span>Python</span><span>FastAPI</span><span>Pandas</span><span>SQLite</span><span>JavaScript</span><span>HTML/CSS</span><span>Zoho WorkDrive API</span><span>openpyxl</span></div>
+              </template>
+            </article>
+
+            <article class="pcard" data-tags="automation" style="--d:1;--hr:-20deg;">
+              <div class="pop"><span class="picon"><svg viewBox="0 0 24 24"><use href="#ic-web"></use></svg></span></div>
+              <span class="pbadge">WEB</span>
+              <div class="pinfo">
+                <h3>GlobalPay HRMS</h3>
+                <p>GlobalPayNG · full-stack HR platform — payroll, leave, attendance, RBAC and automated notifications across 100+ pages</p>
+                <div class="pmetrics"><span><b>100+</b> pages</span><span><b>10</b> modules</span></div>
+                <div class="ptags"><span>React</span><span>FastAPI</span><span>PostgreSQL</span></div>
+                <button class="pview" type="button">View case study
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+                </button>
+              </div>
+              <template class="cs">
+                <p class="cs-tag">GlobalPayNG · 2026 · Full-stack</p>
+                <p class="cs-lede">An end-to-end Human Resource Management System for internal use — designed and developed while concurrently fulfilling another departmental role.</p>
+                <h4>Key contributions</h4>
+                <ul>
+                  <li>Built a <b>React + Vite</b> frontend with <b>100+ pages</b> across <b>10 modules</b> — payroll, leave, attendance, expense claims, incident management and document workflows.</li>
+                  <li>Developed a RESTful <b>FastAPI</b> + <b>PostgreSQL</b> backend with JWT authentication, role-based access control (Super Admin, Admin, Employee) and custom role permissions.</li>
+                  <li>Implemented a payroll processing flow with configurable earnings, deductions and automated payslip generation.</li>
+                  <li>Integrated automated email notifications for account creation, leave approvals, expense decisions and incident resolutions.</li>
+                  <li>Designed the database schema and managed migrations with <b>Alembic</b>; ran version control and CI with Git and GitHub.</li>
+                </ul>
+                <h4>Stack</h4>
+                <div class="cs-stack"><span>React</span><span>Vite</span><span>Tailwind CSS</span><span>FastAPI</span><span>Python</span><span>PostgreSQL</span><span>SQLAlchemy</span><span>Alembic</span><span>JWT</span><span>REST API</span><span>RBAC</span><span>Git</span><span>GitHub</span></div>
+              </template>
+            </article>
+
+            <article class="pcard" data-tags="analytics" style="--d:2;--hr:-5deg;">
+              <div class="pop"><span class="picon"><svg viewBox="0 0 24 24"><use href="#ic-bi"></use></svg></span></div>
+              <span class="pbadge">BI</span>
+              <div class="pinfo">
+                <h3>HR Analytics Dashboard</h3>
+                <p>Interactive Power BI dashboard analysing employee attrition across departments, roles and tenure</p>
+                <div class="pmetrics"><span><b>16.1%</b> attrition</span><span><b>Full</b> EDA</span></div>
+                <div class="ptags"><span>Power BI</span><span>Python</span><span>Pandas</span></div>
+                <button class="pview" type="button">View case study
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+                </button>
+              </div>
+              <template class="cs">
+                <p class="cs-tag">HR Analytics · Power BI &amp; Python</p>
+                <p class="cs-lede">An interactive Power BI dashboard analysing employee attrition trends across departments, job roles, demographics and tenure.</p>
+                <h4>Key contributions</h4>
+                <ul>
+                  <li>Identified an overall attrition rate of <b>16.1%</b>, with <b>Sales (20.6%)</b> and <b>HR (19.0%)</b> as the highest-risk departments; recommended targeted retention strategies.</li>
+                  <li>Performed full EDA using Python (Pandas, Matplotlib, Seaborn) to surface key attrition drivers.</li>
+                  <li>Designed an interactive dashboard breaking attrition down by department, job role, demographics and tenure.</li>
+                </ul>
+                <h4>Stack</h4>
+                <div class="cs-stack"><span>Power BI</span><span>Python</span><span>Pandas</span><span>Matplotlib</span><span>Seaborn</span></div>
+                <h4>Links</h4>
+                <p><a href="https://github.com/TeddyM1975/HR-Analytics" target="_blank" rel="noopener">github.com/TeddyM1975/HR-Analytics ↗</a></p>
+              </template>
+            </article>
+
+            <article class="pcard" data-tags="ai automation" style="--d:2;--hr:6deg;">
+              <div class="pop"><span class="picon"><svg viewBox="0 0 24 24"><use href="#ic-ai"></use></svg></span></div>
+              <span class="pbadge">AI</span>
+              <div class="pinfo">
+                <h3>Animal Archive NFT Automation</h3>
+                <p>Node.js CLI that researches a species via the Anthropic API and auto-builds a rich Notion database entry</p>
+                <div class="pmetrics"><span><b>Anthropic</b> + web search</span><span><b>Notion</b> auto-entries</span></div>
+                <div class="ptags"><span>Node.js</span><span>Anthropic API</span><span>Notion API</span></div>
+                <button class="pview" type="button">View case study
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+                </button>
+              </div>
+              <template class="cs">
+                <p class="cs-tag">Animal Archive · AI Content Automation</p>
+                <p class="cs-lede">A Node.js CLI tool that takes an animal name, uses the Anthropic API (with web search) to research the species, then auto-creates a rich Notion database entry.</p>
+                <h4>Each entry includes</h4>
+                <ul>
+                  <li>Conservation status, population data (<b>2016 vs 2026</b> with sources), habitat, ecological role and keystone status.</li>
+                  <li>Behavioral lore, cultural significance and a color palette with hex codes.</li>
+                  <li>NFT trait categories — background rarity, expression variants and special editions.</li>
+                  <li>Three viral, Twitter-ready facts per species.</li>
+                </ul>
+                <p class="cs-lede" style="font-size:14.5px;">The goal was to feed a future conservation-themed NFT project and website that pulls directly from Notion.</p>
+                <h4>Stack</h4>
+                <div class="cs-stack"><span>Node.js</span><span>Anthropic API</span><span>Web Search</span><span>Notion API</span><span>CLI</span></div>
+              </template>
+            </article>
+
+            <article class="pcard" data-tags="ml analytics" style="--d:1;--hr:17deg;">
+              <div class="pop"><span class="picon"><svg viewBox="0 0 24 24"><use href="#ic-ml"></use></svg></span></div>
+              <span class="pbadge">ML</span>
+              <div class="pinfo">
+                <h3>Loan Approval Decision Agent</h3>
+                <p>Classification ML model deployed as an automated decision-support agent for loan approval workflows</p>
+                <div class="pmetrics"><span><b>91%</b> accuracy</span><span><b>Auto</b> decisioning</span></div>
+                <div class="ptags"><span>Python</span><span>Scikit-learn</span><span>Pandas</span></div>
+                <button class="pview" type="button">View case study
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+                </button>
+              </div>
+              <template class="cs">
+                <p class="cs-tag">Loan Approval · ML Decision Support</p>
+                <p class="cs-lede">A classification ML model deployed as an automated decision-support agent for loan approval workflows.</p>
+                <h4>Key contributions</h4>
+                <ul>
+                  <li>Trained and deployed a classification model reaching <b>91% accuracy</b> on loan approval decisions.</li>
+                  <li>Packaged the model as an automated decision-support agent to assist approval workflows.</li>
+                </ul>
+                <h4>Stack</h4>
+                <div class="cs-stack"><span>Python</span><span>Scikit-learn</span><span>Pandas</span></div>
+                <h4>Links</h4>
+                <p><a href="https://github.com/TeddyM1975/Loan-Approval" target="_blank" rel="noopener">github.com/TeddyM1975/Loan-Approval ↗</a></p>
+              </template>
+            </article>
+
+          </div>
+
+          <button class="cnav next" id="cnext" aria-label="Next project">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"></path></svg>
+          </button>
+        </div>
+
+        <div class="cdots" id="cdots"></div>
+      </div>
+
+      <!-- case study modal -->
+      <div class="csm" id="csm" hidden>
+        <div class="csm-backdrop" data-close></div>
+        <div class="csm-panel" role="dialog" aria-modal="true" aria-labelledby="csm-title">
+          <div class="csm-head">
+            <span class="csm-badge" id="csm-badge">AUTO</span>
+            <button class="csm-close" id="csm-close" aria-label="Close" data-close>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"></path></svg>
+            </button>
+            <h3 id="csm-title">Project</h3>
+          </div>
+          <div class="csm-body" id="csm-body"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="wrap reveal">
+        <div class="contact">
+          <div class="contact-grid">
+            <div class="contact-intro">
+              <h2>Let's build something that runs itself.</h2>
+              <p>Have a data problem, a model to ship, or a workflow begging to be automated? Send a note and I'll get back within a day.</p>
+              <div class="social-btns">
+                <a href="https://www.linkedin.com/in/muhtady-olajobi-795b131b6" target="_blank" rel="noopener" class="sbtn" title="LinkedIn">
+                  <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.75V21h-4v-5.3c0-1.26-.02-2.9-1.77-2.9-1.77 0-2.04 1.38-2.04 2.8V21H9z"></path></svg>
+                  <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/TeddyM1975" target="_blank" rel="noopener" class="sbtn" title="GitHub">
+                  <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-3.16 19.49c.5.09.68-.22.68-.48l-.01-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 015 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85l-.01 2.75c0 .27.18.58.69.48A10 10 0 0012 2z"></path></svg>
+                  <span>GitHub</span>
+                </a>
+                <a href="mailto:muhtadyajibola@gmail.com" class="sbtn" title="Email">
+                  <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 7l9 6 9-6"></path></svg>
+                  <span>Email</span>
+                </a>
+                <a href="https://x.com/muhtady_olajobi" target="_blank" rel="noopener" class="sbtn" title="X / Twitter">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.66l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.01 4.13H5.04L17.08 19.77z"></path></svg>
+                  <span>X</span>
+                </a>
+              </div>
+            </div>
+
+            <form class="contact-form" id="contactForm" novalidate>
+              <div class="field">
+                <label for="cf-name">Name</label>
+                <input type="text" id="cf-name" name="name" placeholder="Your name" required>
+              </div>
+              <div class="field">
+                <label for="cf-email">Email</label>
+                <input type="email" id="cf-email" name="email" placeholder="you@company.com" required>
+              </div>
+              <div class="field">
+                <label for="cf-topic">I'm reaching out about</label>
+                <select id="cf-topic" name="topic">
+                  <option>A data / analytics project</option>
+                  <option>An ML model</option>
+                  <option>AI / automation work</option>
+                  <option>A full-time role</option>
+                  <option>Something else</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="cf-msg">Message</label>
+                <textarea id="cf-msg" name="message" rows="4" placeholder="Tell me a little about it…" required></textarea>
+              </div>
+              <button type="submit" class="btn primary" id="cf-submit">Send message
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+              </button>
+              <p class="form-note" id="cf-note" hidden>Thanks — to receive messages, wire this form to Formspree or your email service.</p>
+            </form>
+          </div>
+        </div>
+        <div class="colophon">
+          <span>© 2026 Olajobi Muhtady</span>
+          <span>Data Scientist · AI Engineer · Founder, H.M.T.</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<!-- CV picker modal -->
+<div class="cvm" id="cvm" hidden>
+  <div class="cvm-backdrop" data-cvm-close></div>
+  <div class="cvm-panel" role="dialog" aria-modal="true" aria-labelledby="cvm-title">
+    <div class="cvm-head">
+      <div>
+        <p class="cvm-eyebrow">cv_download.json</p>
+        <h3 id="cvm-title">Which version?</h3>
+      </div>
+      <button class="cvm-x" id="cvm-close" aria-label="Close" data-cvm-close>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"></path></svg>
+      </button>
+    </div>
+    <p class="cvm-sub">Choose the CV that matches your interest:</p>
+    <div class="cvm-options">
+      <a href="cv-data-analyst.pdf" download="Olajobi_Muhtady_Data_Analyst_CV.pdf" class="cvm-opt">
+        <span class="cvm-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 4V19H20"></path>
+            <rect x="7.2" y="12.5" width="2.6" height="6.5" rx="0.7" fill="currentColor" stroke="none"></rect>
+            <rect x="11.2" y="8.3" width="2.6" height="10.7" rx="0.7" fill="currentColor" stroke="none"></rect>
+            <rect x="15.2" y="10.5" width="2.6" height="8.5" rx="0.7" fill="currentColor" stroke="none"></rect>
+          </svg>
+        </span>
+        <span class="cvm-info">
+          <b>Data Analyst</b>
+          <span>Analytics, Power BI, SQL &amp; reporting</span>
+        </span>
+        <svg class="cvm-dl" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 3v12M7 11l5 5 5-5M5 21h14"></path></svg>
+      </a>
+      <a href="cv-data-scientist.pdf" download="Olajobi_Muhtady_Data_Scientist_CV.pdf" class="cvm-opt">
+        <span class="cvm-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 4V19H20"></path>
+            <path d="M6.5 16.5L18 7"></path>
+            <circle cx="8" cy="15.5" r="1.15" fill="currentColor" stroke="none"></circle>
+            <circle cx="11" cy="12" r="1.15" fill="currentColor" stroke="none"></circle>
+            <circle cx="14" cy="10.5" r="1.15" fill="currentColor" stroke="none"></circle>
+            <circle cx="17" cy="7.8" r="1.15" fill="currentColor" stroke="none"></circle>
+          </svg>
+        </span>
+        <span class="cvm-info">
+          <b>Data Scientist</b>
+          <span>ML, NLP, Scikit-learn &amp; model deployment</span>
+        </span>
+        <svg class="cvm-dl" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 3v12M7 11l5 5 5-5M5 21h14"></path></svg>
+      </a>
+      <a href="cv-ai-engineer.pdf" download="Olajobi_Muhtady_AI_Engineer_CV.pdf" class="cvm-opt">
+        <span class="cvm-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1">
+            <line x1="5" y1="6" x2="12" y2="9" opacity=".55"></line><line x1="5" y1="6" x2="12" y2="15" opacity=".55"></line>
+            <line x1="5" y1="12" x2="12" y2="9" opacity=".55"></line><line x1="5" y1="12" x2="12" y2="15" opacity=".55"></line>
+            <line x1="5" y1="18" x2="12" y2="9" opacity=".55"></line><line x1="5" y1="18" x2="12" y2="15" opacity=".55"></line>
+            <line x1="12" y1="9" x2="19" y2="12" opacity=".55"></line><line x1="12" y1="15" x2="19" y2="12" opacity=".55"></line>
+            <circle cx="5" cy="6" r="1.6" fill="currentColor" stroke="none"></circle><circle cx="5" cy="12" r="1.6" fill="currentColor" stroke="none"></circle><circle cx="5" cy="18" r="1.6" fill="currentColor" stroke="none"></circle>
+            <circle cx="12" cy="9" r="1.6" fill="currentColor" stroke="none"></circle><circle cx="12" cy="15" r="1.6" fill="currentColor" stroke="none"></circle><circle cx="19" cy="12" r="1.7" fill="currentColor" stroke="none"></circle>
+          </svg>
+        </span>
+        <span class="cvm-info">
+          <b>AI Engineer</b>
+          <span>LLMs, agentic systems, n8n &amp; automation</span>
+        </span>
+        <svg class="cvm-dl" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 3v12M7 11l5 5 5-5M5 21h14"></path></svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrambleTextPlugin.min.js"></script>
+<script>
+(function(){
+  var root=document.documentElement;
+
+  /* ---- theme toggle (persisted) ---- */
+  var themeBtn=document.getElementById('themebtn');
+  var saved=localStorage.getItem('om_theme');
+  if(saved){root.setAttribute('data-theme',saved);}
+  themeBtn.addEventListener('click',function(){
+    var next=root.getAttribute('data-theme')==='dark'?'light':'dark';
+    root.setAttribute('data-theme',next);
+    localStorage.setItem('om_theme',next);
+  });
+
+  /* ---- mobile menu ---- */
+  var rail=document.getElementById('rail');
+  var menuBtn=document.getElementById('menuBtn');
+  menuBtn.addEventListener('click',function(){rail.classList.toggle('open');});
+  rail.querySelectorAll('.nav a').forEach(function(a){a.addEventListener('click',function(){rail.classList.remove('open');});});
+
+  /* ---- CV picker modal ---- */
+  (function(){
+    var modal=document.getElementById('cvm');
+    var resumeBtn=document.getElementById('resumeBtn');
+    if(!modal||!resumeBtn)return;
+    function openCvm(){
+      modal.hidden=false;
+      document.body.classList.add('cvm-open');
+      document.getElementById('cvm-close').focus();
+    }
+    function closeCvm(){
+      modal.hidden=true;
+      document.body.classList.remove('cvm-open');
+      resumeBtn.focus();
+    }
+    resumeBtn.addEventListener('click',function(e){ e.preventDefault(); openCvm(); });
+    modal.addEventListener('click',function(e){ if(e.target.hasAttribute('data-cvm-close'))closeCvm(); });
+    document.addEventListener('keydown',function(e){ if(e.key==='Escape'&&!modal.hidden)closeCvm(); });
+  })();
+
+  /* ---- hero title scramble (GSAP ScrambleText) ---- */
+  (function(){
+    var parts=document.querySelectorAll('#heroTitle .sc');
+    function showFinal(){ parts.forEach(function(p){p.innerHTML=p.dataset.final;p.style.visibility='visible';}); }
+    var reduce=window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+    if(!window.gsap || typeof window.ScrambleTextPlugin==='undefined' || reduce){ showFinal(); return; }
+    try{ gsap.registerPlugin(ScrambleTextPlugin); }catch(e){}
+    var tl=gsap.timeline({delay:.3});
+    parts.forEach(function(p,i){
+      tl.to(p,{
+        duration:1.1+i*0.15,
+        scrambleText:{text:p.dataset.final,chars:"upperCase01<>/",speed:0.55,revealDelay:0.2},
+        onStart:function(){ p.style.visibility='visible'; }
+      }, i*0.45);
+    });
+  })();
+
+  /* ---- reveal on scroll ---- */
+  var revs=document.querySelectorAll('.reveal');
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target);} });
+  },{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+  revs.forEach(function(r){io.observe(r);});
+
+  /* ---- animated counters ---- */
+  function animCount(el){
+    var target=+el.dataset.count, suf=el.dataset.suffix||'', dur=1100, t0=null;
+    function step(ts){
+      if(!t0)t0=ts; var p=Math.min((ts-t0)/dur,1);
+      var eased=1-Math.pow(1-p,3);
+      el.textContent=Math.round(target*eased)+suf;
+      if(p<1)requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+  var counters=document.querySelectorAll('[data-count]');
+  var cio=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){ if(en.isIntersecting){ animCount(en.target); cio.unobserve(en.target);} });
+  },{threshold:.6});
+  counters.forEach(function(c){cio.observe(c);});
+
+  /* ---- skill bars ---- */
+  var bio=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){
+        en.target.querySelector('.fill').style.width=en.target.dataset.pct+'%';
+        bio.unobserve(en.target);
+      }
+    });
+  },{threshold:.5});
+  document.querySelectorAll('.bar').forEach(function(b){bio.observe(b);});
+
+  /* ---- project carousel (pop-out cards) ---- */
+  (function(){
+    var rail=document.getElementById('prail');
+    var filters=document.getElementById('filters');
+    var dotsWrap=document.getElementById('cdots');
+    var prev=document.getElementById('cprev');
+    var next=document.getElementById('cnext');
+    if(!rail)return;
+    var allCards=[].slice.call(rail.querySelectorAll('.pcard'));
+
+    function visibleCards(){ return allCards.filter(function(c){return !c.classList.contains('hide');}); }
+
+    // build dots
+    function buildDots(){
+      dotsWrap.innerHTML='';
+      visibleCards().forEach(function(c,i){
+        var b=document.createElement('button');
+        b.setAttribute('aria-label','Go to project '+(i+1));
+        b.addEventListener('click',function(){ centerOn(c); });
+        dotsWrap.appendChild(b);
+      });
+    }
+
+    function centerOn(card){
+      if(!card)return;
+      var target = card.offsetLeft - (rail.clientWidth - card.clientWidth)/2;
+      rail.style.scrollSnapType='none';
+      rail.scrollTo({left:Math.max(0,target), behavior:'smooth'});
+      clearTimeout(rail._snapT);
+      rail._snapT=setTimeout(function(){ rail.style.scrollSnapType=''; updateFocus(); }, 650);
+    }
+    function currentIndex(){
+      var v=visibleCards();
+      var foc=rail.querySelector('.pcard.focused');
+      return Math.max(0, v.indexOf(foc));
+    }
+    function go(dir){
+      var v=visibleCards();
+      var i=Math.max(0, Math.min(v.length-1, currentIndex()+dir));
+      centerOn(v[i]);
+    }
+
+    var raf;
+    function updateFocus(){
+      cancelAnimationFrame(raf);
+      raf=requestAnimationFrame(function(){
+        var mid = rail.scrollLeft + rail.clientWidth/2;
+        var best=null, bestD=Infinity;
+        var v=visibleCards();
+        v.forEach(function(c){
+          var cMid=c.offsetLeft + c.clientWidth/2;
+          var d=Math.abs(cMid-mid);
+          if(d<bestD){bestD=d;best=c;}
+        });
+        allCards.forEach(function(c){c.classList.toggle('focused',c===best);});
+        var dots=dotsWrap.querySelectorAll('button');
+        var idx=v.indexOf(best);
+        dots.forEach(function(d,i){d.classList.toggle('on',i===idx);});
+      });
+    }
+
+    rail.addEventListener('scroll',updateFocus,{passive:true});
+    window.addEventListener('resize',updateFocus);
+
+    prev.addEventListener('click',function(){ go(-1); });
+    next.addEventListener('click',function(){ go(1); });
+
+    // filtering
+    filters.addEventListener('click',function(e){
+      var b=e.target.closest('.filter'); if(!b)return;
+      filters.querySelectorAll('.filter').forEach(function(f){f.classList.toggle('active',f===b);});
+      var f=b.dataset.f;
+      allCards.forEach(function(c){
+        var show = f==='all' || c.dataset.tags.split(' ').indexOf(f)>-1;
+        c.classList.toggle('hide',!show);
+      });
+      buildDots();
+      var v=visibleCards();
+      if(v.length){ centerOn(v[0]); }
+      setTimeout(updateFocus,60);
+    });
+
+    buildDots();
+    requestAnimationFrame(updateFocus);
+    setTimeout(updateFocus,300);
+  })();
+
+  /* ---- case study modal ---- */
+  (function(){
+    var modal=document.getElementById('csm');
+    if(!modal)return;
+    var titleEl=document.getElementById('csm-title');
+    var badgeEl=document.getElementById('csm-badge');
+    var bodyEl=document.getElementById('csm-body');
+    var panel=modal.querySelector('.csm-panel');
+    var lastFocus=null;
+
+    function open(card){
+      var tpl=card.querySelector('template.cs');
+      if(!tpl)return;
+      titleEl.textContent=card.querySelector('h3').textContent;
+      var badge=card.querySelector('.pbadge');
+      badgeEl.textContent=badge?badge.textContent:'';
+      bodyEl.innerHTML='';
+      bodyEl.appendChild(tpl.content.cloneNode(true));
+      panel.style.setProperty('--c1',getComputedStyle(card).getPropertyValue('--c1'));
+      panel.style.setProperty('--c2',getComputedStyle(card).getPropertyValue('--c2'));
+      panel.style.setProperty('--hr',card.style.getPropertyValue('--hr')||'0deg');
+      lastFocus=document.activeElement;
+      modal.hidden=false;
+      document.body.classList.add('csm-open');
+      document.getElementById('csm-close').focus();
+    }
+    function close(){
+      modal.hidden=true;
+      document.body.classList.remove('csm-open');
+      if(lastFocus&&lastFocus.focus)lastFocus.focus();
+    }
+
+    document.querySelectorAll('.pcard .pview').forEach(function(btn){
+      btn.addEventListener('click',function(e){ e.stopPropagation(); open(btn.closest('.pcard')); });
+    });
+    modal.addEventListener('click',function(e){ if(e.target.hasAttribute('data-close'))close(); });
+    document.addEventListener('keydown',function(e){ if(e.key==='Escape'&&!modal.hidden)close(); });
+  })();
+
+  /* ---- contact form (demo) ---- */
+  var cform=document.getElementById('contactForm');
+  if(cform){
+    cform.addEventListener('submit',function(e){
+      e.preventDefault();
+      if(!cform.checkValidity()){cform.reportValidity();return;}
+      var note=document.getElementById('cf-note');
+      var btn=document.getElementById('cf-submit');
+      note.hidden=false;
+      btn.firstChild.textContent='Sent ✓ ';
+      btn.disabled=true;btn.style.opacity=.7;
+      cform.querySelectorAll('input,textarea,select').forEach(function(f){f.value='';});
+    });
+  }
+
+  /* ---- scroll spy ---- */
+  var navLinks=document.querySelectorAll('#nav a');
+  var sections=[].map.call(navLinks,function(a){return document.querySelector(a.getAttribute('href'));});
+  var sio=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){
+        var id='#'+en.target.id;
+        navLinks.forEach(function(a){a.classList.toggle('active',a.getAttribute('href')===id);});
+      }
+    });
+  },{rootMargin:'-45% 0px -50% 0px'});
+  sections.forEach(function(s){s&&sio.observe(s);});
+})();
+</script>
+<div id="tweaks-root"></div>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel" src="portfolio-tweaks.jsx"></script>
+</body>
+</html>
